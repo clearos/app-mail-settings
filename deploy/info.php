@@ -26,6 +26,7 @@ $app['subcategory'] = lang('base_subcategory_settings');
 /////////////////////////////////////////////////////////////////////////////
 
 $app['core_requires'] = array(
+    'app-accounts',
     'app-mail-core',
     'app-smtp-core >= 1:1.1.3',
 );

@@ -97,19 +97,13 @@ class Domain extends ClearOS_Controller
 
     function _common($form_type)
     {
-        // Bail if LDAP has not been initialzed
-        // TODO: using the "accounts" widget here, it should really be an "directory" widget
-        //----------------------------------------------------------------------------------
-
-        if (! clearos_app_installed('accounts')) {
-            echo "Beta - nothing to see here until directory has been installed and initialized.";
-            return;
-        }
+        // Show account status widget if we're not in a happy state
+        //---------------------------------------------------------
 
         $this->load->module('accounts/status');
 
         if ($this->status->unhappy()) {
-            echo "Beta - nothing to see here until directory has been initialized.";
+            $this->status->widget('mail_settings');
             return;
         }
 
