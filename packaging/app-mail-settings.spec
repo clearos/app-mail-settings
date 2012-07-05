@@ -1,7 +1,7 @@
 
 Name: app-mail-settings
 Epoch: 1
-Version: 1.2.2
+Version: 1.2.4
 Release: 1%{dist}
 Summary: Mail Settings
 License: GPLv3
@@ -20,6 +20,7 @@ Summary: Mail Settings - Core
 License: LGPLv3
 Group: ClearOS/Libraries
 Requires: app-base-core
+Requires: app-accounts
 Requires: app-mail-core
 Requires: app-smtp-core >= 1:1.1.3
 
