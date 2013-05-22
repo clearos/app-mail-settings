@@ -3,9 +3,9 @@
 /**
  * Mail domain controller.
  *
- * @category   Apps
- * @package    Mail_Settings
- * @subpackage Controllers
+ * @category   apps
+ * @package    mail-settings
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
@@ -43,9 +43,9 @@ use \clearos\apps\accounts\Accounts_Engine as Accounts_Engine;
 /**
  * Mail domain controller.
  *
- * @category   Apps
- * @package    Mail_Settings
- * @subpackage Controllers
+ * @category   apps
+ * @package    mail-settings
+ * @subpackage controllers
  * @author     ClearFoundation <developer@clearfoundation.com>
  * @copyright  2012 ClearFoundation
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License version 3 or later
