@@ -1,7 +1,7 @@
 
 Name: app-mail-settings
 Epoch: 1
-Version: 1.2.4
+Version: 1.6.5
 Release: 1%{dist}
 Summary: Mail Settings
 License: GPLv3
@@ -74,8 +74,6 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/mail_settings/packaging
-%exclude /usr/clearos/apps/mail_settings/tests
 %dir /usr/clearos/apps/mail_settings
 /usr/clearos/apps/mail_settings/deploy
 /usr/clearos/apps/mail_settings/language
-/usr/clearos/apps/mail_settings/libraries
