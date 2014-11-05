@@ -25,6 +25,8 @@ $app['subcategory'] = lang('base_subcategory_settings');
 // Packaging
 /////////////////////////////////////////////////////////////////////////////
 
+$app['menu_enabled'] = FALSE;
+
 $app['core_requires'] = array(
     'app-accounts',
     'app-mail-core',
