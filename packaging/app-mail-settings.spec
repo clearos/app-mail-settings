@@ -1,7 +1,7 @@
 
 Name: app-mail-settings
 Epoch: 1
-Version: 1.6.7
+Version: 1.6.8
 Release: 1%{dist}
 Summary: Mail Settings
 License: GPLv3
