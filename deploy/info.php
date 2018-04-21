@@ -5,8 +5,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 $app['basename'] = 'mail_settings';
-$app['version'] = '2.1.6';
-$app['release'] = '1';
+$app['version'] = '2.5.0';
 $app['vendor'] = 'ClearFoundation';
 $app['packager'] = 'ClearFoundation';
 $app['license'] = 'GPLv3';
@@ -27,8 +26,12 @@ $app['subcategory'] = lang('base_subcategory_settings');
 
 $app['menu_enabled'] = FALSE;
 
-$app['core_requires'] = array(
+$app['requires'] = array(
     'app-accounts',
+);
+
+$app['core_requires'] = array(
+    'app-accounts-core',
     'app-mail-core',
     'app-smtp-core >= 1:1.1.3',
 );

@@ -1,11 +1,13 @@
 
 Name: app-mail-settings
 Epoch: 1
-Version: 2.1.6
+Version: 2.5.0
 Release: 1%{dist}
 Summary: Mail Settings
 License: GPLv3
-Group: ClearOS/Apps
+Group: Applications/Apps
+Packager: ClearFoundation
+Vendor: ClearFoundation
 Source: %{name}-%{version}.tar.gz
 Buildarch: noarch
 Requires: %{name}-core = 1:%{version}-%{release}
@@ -16,11 +18,11 @@ Requires: app-network
 The Mail Settings app provides the necessary tools to manage core mail functionality.
 
 %package core
-Summary: Mail Settings - Core
+Summary: Mail Settings - API
 License: LGPLv3
-Group: ClearOS/Libraries
+Group: Applications/API
 Requires: app-base-core
-Requires: app-accounts
+Requires: app-accounts-core
 Requires: app-mail-core
 Requires: app-smtp-core >= 1:1.1.3
 
@@ -74,6 +76,7 @@ exit 0
 %files core
 %defattr(-,root,root)
 %exclude /usr/clearos/apps/mail_settings/packaging
+%exclude /usr/clearos/apps/mail_settings/unify.json
 %dir /usr/clearos/apps/mail_settings
 /usr/clearos/apps/mail_settings/deploy
 /usr/clearos/apps/mail_settings/language
